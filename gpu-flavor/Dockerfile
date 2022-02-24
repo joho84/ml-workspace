@@ -129,7 +129,7 @@ RUN \
     conda remove --force -y pytorch cpuonly && \
     # https://pytorch.org/get-started/locally/
     conda install cudatoolkit=11.6 -c pytorch -c nvidia && \
-    pip install --no-cache-dir torch==1.9.0+cu116 torchvision==0.10.0+cu116 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html && \
+    pip install --no-cache-dir torch==1.9.0+cu113 torchvision==0.10.0+cu113 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html && \
     # Install cupy: https://cupy.chainer.org/
     pip install --no-cache-dir cupy-cuda112 && \
     # Install pycuda: https://pypi.org/project/pycuda
